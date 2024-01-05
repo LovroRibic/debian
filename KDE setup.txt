@@ -21,3 +21,12 @@ sudo apt update
 flatpak backend
 restart discover
 flatpak repo... wait for update... OK
+
+GRUB THEMES
+
+git clone https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes
+cd Top-5-Bootloader-Themes
+sudo ./install.sh
+
+videoinfo
+1024x768x32
