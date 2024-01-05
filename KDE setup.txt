@@ -1,0 +1,23 @@
+git clone https://www.github.com/LovroRibic/debian
+
+sudo apt install micro neofetch htop git grub-customizer
+
+sudo micro /etc/apt/sources.list
+deb http://deb.debian.org/debian/ bookworm main non-free-firmware non-free contrib
+(na novo je non-free pa contrib)
+sudo apt update
+
+sudo apt install nvidia-driver
+sudo reboot
+
+sudo micro /etc/default/grub
+GRUB_CMDLINE_LINUX="nvidia-drm.modeset=1"
+sudo update-grub
+sudo reboot
+
+sudo apt install firefox-esr
+sudo apt update
+
+flatpak backend
+restart discover
+flatpak repo... wait for update... OK
