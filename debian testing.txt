@@ -40,3 +40,8 @@ sudo apt install steam-installer
 
 FIX WRONG MONITOR LOGIN MANAGER
 sudo cp .config/monitors.xml /var/lib/gdm3/.config
+
+FIX FLATPAK APPS CUSTOM CURSORS
+cursors go in /home/lovro/.icons
+flatpak --user override --filesystem=/home/$USER/.icons/:ro
+flatpak --user override --filesystem=/usr/share/icons/:ro
